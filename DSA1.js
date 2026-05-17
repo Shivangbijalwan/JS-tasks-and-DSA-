@@ -36,8 +36,8 @@ for (let i=0; i<arr.length; i++){
   sum = sum + arr[i]; 
 }
 console.log(sum);
-*/
 
+// maximum number in array
 
 let arr = [20 , 80 , 10 , 50 , 30];
 let max = arr[0];
@@ -48,3 +48,28 @@ for (let i=1 ; i<arr.length ; i++){
 }
 console.log(max);
 
+
+// minimum number in array
+
+let arr = [20 , 80 , 10 , 50 , 30];
+let min = arr[0];
+for (let i=1 ; i<arr.length ; i++){
+  if (min>arr[i]){
+    min=arr[i];
+  }
+}
+console.log(min);
+*/
+
+let arr = [13, 23, 33, 43, 53, 63];
+let i = 0, j = arr.length - 1;
+
+while (i < j) {
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+    i++;
+    j--;
+}
+
+console.log(arr); // [63, 53, 43, 33, 23, 13]
