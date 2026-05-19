@@ -59,7 +59,7 @@ for (let i=1 ; i<arr.length ; i++){
   }
 }
 console.log(min);
-*/
+
 
 let arr = [13, 23, 33, 43, 53, 63];
 let i = 0, j = arr.length - 1;
@@ -73,3 +73,53 @@ while (i < j) {
 }
 
 console.log(arr); // [63, 53, 43, 33, 23, 13]
+
+// left rotation by 1
+
+ let arr = [1,2,3,4,5]
+ let copy = arr[0];
+ for(let i=0 ; i<arr.length-1 ; i++){
+  arr[i] = arr[i+1]
+ }
+ arr[arr.length-1] = copy;
+
+ console.log(arr);
+
+
+// right rotation by 1
+
+let arr = [1,2,3,4,5]
+let copy =arr[arr.length-1];
+for(let i=arr.length-1 ; i>0; i-- ){
+  arr[i] = arr[i-1]
+}
+arr[0] = copy;
+console.log(arr);
+
+
+//nesting in loop
+for (let j = 1; j <= 4; j++) {
+    console.log(j + " exectutuion")
+  for (let i = 0; i <= 3; i++) {
+    console.log("hello world");
+  }
+}
+  
+
+// k step
+let arr = [1, 2, 3, 4, 5];
+let k = Number(prompt("Enter a number: "));
+
+for (let j = 0; j < k; j++) {
+  let copy = arr[0];
+  for (let i =0; i<arr.length-1; i++) {
+    arr[i] = arr[i + 1];
+  }
+  arr[arr.length-1] = copy;
+}
+
+console.log(arr);
+
+*/
+
+
