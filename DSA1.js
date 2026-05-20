@@ -99,7 +99,7 @@ console.log(arr);
 
 //nesting in loop
 for (let j = 1; j <= 4; j++) {
-    console.log(j + " exectutuion")
+    console.log(j + " execution")
   for (let i = 0; i <= 3; i++) {
     console.log("hello world");
   }
@@ -120,6 +120,45 @@ for (let j = 0; j < k; j++) {
 
 console.log(arr);
 
+
+// remove duplicates from sorted array
+
+let num = [0 , 0 , 1 ,1 ,2, 3, 4 ,];
+let j = 1;
+for(let i = 0 ; i<num.length-1 ; i++ ){
+  if(num[i]!=num[i+1]){
+    num[j] = num[i+1]
+    j++
+  }
+}
+  return j;
+  
+
+//merge the shorted array
+
+let arr1 = [2, 5, 6];
+let arr2 = [1, 3, 4, 7];
+let merge = new Array(arr1.length + arr2.length)
+let i = j = k = 0
+while (i < arr1.length && j < arr2.length) {
+  if (arr1[i] < arr2[j]) {
+    merge[k++] = arr1[i++]
+  }
+  else {
+    merge[k++] = arr2[j++]
+  }
+}
+
+while (j < arr2.length) {
+  merge[k++] = arr1[j++]
+}
+
+while (i < arr2.length) {
+  merge[k++] = arr2[i++]
+}
+
+console.log(merge);
 */
 
+// best time to buy and sell stocks
 
