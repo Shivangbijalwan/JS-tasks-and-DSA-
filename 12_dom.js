@@ -83,4 +83,27 @@ for (var i = 0; i < s.length; i++) {
 }
 */
 
+/*
+// friend follow button 
+
+var stat = document.querySelector("h5");
+var flag = 0;
+
+var button = document.querySelector("#btn");
+button.addEventListener('click', function(){
+  if(flag == 0){ 
+    stat.innerHTML = "FRIENDS";
+    stat.style.color = "green";
+    button.innerHTML = "remove friend"
+    flag = 1;
+ 
+  } else{
+      stat.style.color="red";
+      stat.innerHTML = "stranger";
+      button.innerHTML = "add friend"
+      flag = 0;
+}
+});*/
+
+
 
