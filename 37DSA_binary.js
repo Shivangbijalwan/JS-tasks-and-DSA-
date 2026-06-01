@@ -22,3 +22,6 @@ function binary(arr, f, l, target) {
 
     return -1
 }
+
+
+// this uses O(log o)
