@@ -1,4 +1,5 @@
 // This is Binary Search 
+// this search work like dividing a array into half and move to the relevent one and then divide it in half
 let arr = [2, 5, 8, 9, 12, 18, 20, 25, 67, 101, 125];
 let index = binary(arr, 0, arr.length - 1, 67);
 if (index === -1) console.log("not found")
