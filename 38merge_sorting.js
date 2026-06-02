@@ -1,5 +1,6 @@
-// Merge Sort
-// Divide and Conquer
+// this is merge sorting 
+// its an divide and conquer tasks 
+
 
 function conquer(arr, first, mid, last) {
     let temp = new Array(last - first + 1);
