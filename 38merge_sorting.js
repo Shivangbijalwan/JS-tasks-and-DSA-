@@ -48,4 +48,4 @@ let arr = [8, 2, 1, 9, 5, 12, 4, 20];
 
 divide(arr, 0, arr.length - 1);
 
-console.log(arr);
+console.log(arr);  
