@@ -39,3 +39,21 @@ console.log(sum(5))
 */
 
 
+/*
+function temp(n){
+    if (n===0)return
+   console.log(n)
+   temp(n-1);
+}
+
+temp(10)
+*/
+
+
+function temp(n){
+    if(n===0) return
+    temp(n-1)
+    console.log(n)
+}
+
+temp(10)
